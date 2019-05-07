@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-common-pip {
+    width: 20px;
+    height: 11px;
+    background-position: -5px -5px;
+}
+
+.sprite-common-pip-mobile {
+    width: 11px;
+    height: 20px;
+    background-position: -35px -5px;
+}
+
+.sprite-first-pip {
+    width: 14px;
+    height: 26px;
+    background-position: -56px -5px;
+}
+
+.sprite-first-pip-mobile {
+    width: 25px;
+    height: 10px;
+    background-position: -80px -5px;
+}
+
+.sprite-last-pip {
+    width: 10px;
+    height: 25px;
+    background-position: -115px -5px;
+}
+
+.sprite-last-pip-mobile {
+    width: 26px;
+    height: 14px;
+    background-position: -135px -5px;
+}
+
+.sprite-line {
+    width: 767px;
+    height: 60px;
+    background-position: -5px -41px;
+}
+
+.sprite-line-mobile {
+    width: 767px;
+    height: 36px;
+    background-position: -5px -111px;
+}
+
+.sprite-line-vertical {
+    width: 60px;
+    height: 767px;
+    background-position: -782px -5px;
+}
+
+.sprite-logo {
+    width: 154px;
+    height: 52px;
+    background-position: -5px -157px;
+}
+
+.sprite-stamp {
+    width: 252px;
+    height: 106px;
+    background-position: -169px -157px;
+}
+
+.sprite-title {
+    width: 221px;
+    height: 118px;
+    background-position: -431px -157px;
+}
+
+.sprite-triangle {
+    width: 17px;
+    height: 14px;
+    background-position: -171px -5px;
+}

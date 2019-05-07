@@ -5,12 +5,16 @@ html, body {
 }
 
 .page {
-    
+    background: url('%=static=%content/paper.jpg')
 }
+
+
 
 .page__wrapper {
     min-height: 100%;
     margin-bottom: -50px;
+    @include bg($logo);
+    @include bg($title);
 }
 
 * html .page__wrapper {
