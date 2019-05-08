@@ -1,5 +1,17 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+        {
+            name: 'postcss-rgb',
+        },
+        {
+            name: 'postcss-pxtorem',
+            options: {
+                rootValue: 16,
+                propList: ["*", "!*border*"],
+                selectorBlackList: [/^html$/]
+            }
+        },
+    ],
     "svg": {
         "active": true,
         "workflow": "sprite",
@@ -47,7 +59,7 @@ module.exports = {
     "generateStaticPath": true,
     "devPath": "./dev/",
     "buildPath": "./builds/",
-    "useBuildVersioning": true,
+    "useBuildVersioning": false,
     "useArchiver": true,
     "ulimit": 4096,
     "templater": "pug",

@@ -1,5 +1,16 @@
 // Common styles of the project
 
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: $ptsans;
+    font-weight: 700;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 html, body {
     height: 100%;
 }
@@ -8,19 +19,13 @@ html, body {
     background: url('%=static=%content/paper.jpg')
 }
 
-
-
 .page__wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
-    @include bg($logo);
-    @include bg($title);
 }
 
 * html .page__wrapper {
     height: 100%;
 }
 
-.page__buffer {
-    height: 50px;
-}
+//@include bg($logo);
+
