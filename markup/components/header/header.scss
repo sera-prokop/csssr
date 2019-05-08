@@ -1,0 +1,16 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 55px 0 112px;
+}
+
+.header__logo{
+    @include bg($logo);
+}
+
+.header__img{
+    @include bg($stamp);
+    margin-top: -14px;
+}
+
+

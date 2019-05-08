@@ -1,0 +1,8 @@
+mixin about(data)
+    section.about
+        .about__container.container
+            each item in data.list
+                .about__field.field
+                    label.field__label(for=item.for_id)=item.label
+                    .field__input
+                        input(type="text" id=item.for_id value=item.input)

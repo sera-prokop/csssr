@@ -1,0 +1,8 @@
+.title-section{
+    margin-bottom: 60px;
+}
+
+.title-section__title{
+    @include bg($title);
+    margin: 0 auto;
+}

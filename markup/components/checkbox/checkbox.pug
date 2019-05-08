@@ -1,0 +1,20 @@
+mixin checkbox(cls, list, customClass)
+    ul(class=customClass ? `${customClass} ${cls}` : cls)
+
+        each item in list
+            li(class=`${cls}__item`)
+
+                if item.checked
+                    input(class=`${cls}__input` id=item.for_id type="checkbox" checked)
+                else
+                    input(class=`${cls}__input` id=item.for_id type="checkbox")
+
+                case item.mod
+                    when 'link'
+                        label(class=`${cls}__label` for=item.for_id) #{item.label}&nbsp;
+                            a(href=item.link)=item.text
+                    when 'span'
+                        label(class=`${cls}__label` for=item.for_id)=item.label
+                            span &nbsp;#{item.text}
+                    default
+                        label(class=`${cls}__label` for=item.for_id)=item.label

@@ -1,0 +1,13 @@
+include ../checkbox/checkbox.pug
+mixin skills(data)
+    section.skills
+        .skills__container.container
+            h2.skills__title.title=data.title
+            p.skills__text.text=data.text
+
+            +checkbox('checkbox', data.list, 'skills__list')
+
+
+
+
+

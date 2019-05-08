@@ -2,7 +2,10 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
+    include ../components/header/header.pug
+    include ../components/title/title.pug
+    include ../components/about/about.pug
+    include ../components/skills/skills.pug
     include ../components/footer/footer.pug
 
     head
@@ -13,9 +16,10 @@ html(class="no-js", lang="ru")
         section.page__wrapper
 
             //- Include your components here
-            +example()
-
-            .page__buffer
+            +header()
+            +title()
+            +about(about)
+            +skills(skills)
 
         .page__footer
             +footer()

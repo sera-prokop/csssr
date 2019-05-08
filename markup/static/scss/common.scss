@@ -16,16 +16,42 @@ html, body {
 }
 
 .page {
-    background: url('%=static=%content/paper.jpg')
+    background-color: $mainBg;
 }
 
 .page__wrapper {
     min-height: 100%;
+    background: url('%=static=%content/paper.jpg');
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 * html .page__wrapper {
     height: 100%;
 }
 
-//@include bg($logo);
+.container{
+    max-width: 815px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title{
+    margin: 0;
+    color: $brown;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.text{
+    margin: 0;
+    color: $textColor;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 

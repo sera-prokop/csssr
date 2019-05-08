@@ -65,8 +65,7 @@ module.exports = {
     "templater": "pug",
     "cssPreprocessor": "scss",
     "useImagesForDisplayWithDpi": [
-        96,
-        192
+        96
     ],
     "fs": {
         "staticFolderName": "static",

@@ -1,0 +1,63 @@
+.checkbox{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox__input {
+    position: absolute;
+    opacity: 0;
+
+    &:disabled + label {
+        color: #b8b8b8;
+        cursor: auto;
+    }
+
+    &:disabled + label:before {
+        box-shadow: none;
+        background: #ddd;
+    }
+
+    &:checked + label:after {
+        content: '';
+        position: absolute;
+        @include bg($check);
+        left: 3px;
+        top: 3px;
+    }
+    &:focus + label{
+        color: rgba(black, 0.8)
+    }
+}
+
+.checkbox__label{
+    position: relative;
+    cursor: pointer;
+    font-size: 21px;
+    line-height: 1;
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    &:before {
+        content: '';
+        margin-right: 10px;
+        margin-top: 3px;
+        @include bg($checkbox);
+        flex-shrink: 0;
+    }
+    &:focus{
+        box-shadow: 1px 1px 5px #000;
+    }
+    span{
+        margin-top: 1px;
+    }
+    a{
+        color: $linkColor;
+        transition: color $tr;
+        outline: none;
+        &:hover, &:focus{
+            color: rgba($linkColor, 0.8);
+        }
+    }
+}
