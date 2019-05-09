@@ -21,7 +21,7 @@ html, body {
 
 .page__wrapper {
     min-height: 100%;
-    background: url('%=static=%content/paper.jpg');
+    background: url('%=static=%content/pattern.jpg');
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
@@ -54,4 +54,14 @@ html, body {
     line-height: 23px;
 }
 
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 

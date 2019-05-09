@@ -1,0 +1,14 @@
+.plans{
+  margin-bottom: 80px;
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.plans__title{
+  margin-bottom: 5px;
+}
+
+.plans__text{
+  margin-bottom: 5px;
+}

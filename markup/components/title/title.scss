@@ -1,5 +1,8 @@
 .title-section{
     margin-bottom: 60px;
+    @media (max-width: $tablet) {
+        margin-bottom: 30px;
+    }
 }
 
 .title-section__title{

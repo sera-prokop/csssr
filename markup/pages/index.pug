@@ -6,23 +6,27 @@ html(class="no-js", lang="ru")
     include ../components/title/title.pug
     include ../components/about/about.pug
     include ../components/skills/skills.pug
-    include ../components/footer/footer.pug
+    include ../components/level/level.pug
+    include ../components/descr/descr.pug
+    include ../components/plans/plans.pug
+    include ../components/date/date.pug
 
     head
         +head(head.defaults)
     body.page
         |%=symbols=%
 
-        section.page__wrapper
+        main.page__wrapper
 
             //- Include your components here
             +header()
             +title()
             +about(about)
             +skills(skills)
-
-        .page__footer
-            +footer()
+            +level(level)
+            +descr(descr)
+            +plans(plans)
+            +date(date)
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
         script svg4everybody();

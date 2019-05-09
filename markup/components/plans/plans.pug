@@ -1,0 +1,8 @@
+include ../radio/radio.pug
+
+mixin plans(data)
+    section.plans
+        .plans__container.container
+            h2.plans__title.title=data.title
+            p.plans__text.text=data.text
+            +radio('radio', data.radio, 'plans__radio')

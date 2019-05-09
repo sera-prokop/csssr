@@ -1,0 +1,17 @@
+.descr{
+  margin-bottom: 50px;
+  @media (max-width: $tablet) {
+    margin-bottom: 25px;
+  }
+}
+
+.descr__title{
+  margin-bottom: 10px;
+}
+
+.descr__text{
+  margin-bottom: 25px;
+  @media (max-width: $tablet) {
+    margin-bottom: 15px;
+  }
+}

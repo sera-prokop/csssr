@@ -2,6 +2,15 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 5px;
+    &--small{
+        .field__input{
+            width: auto;
+            max-width: 215px;
+        }
+    }
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+    }
 }
 
 .field__label{
@@ -9,6 +18,11 @@
     font-size: 22px;
     margin-right: 15px;
     color: $brown;
+    @media (max-width: $tablet) {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 18px;
+    }
 }
 
 .field__input{
@@ -17,6 +31,9 @@
     width: 100%;
     height: auto;
     background-position: 0 22px;
+    @media (max-width: $tablet) {
+        background-position: 0 2px;
+    }
     input{
         width: 100%;
         font-family: $courier;
@@ -28,9 +45,16 @@
         padding-left: 15px;
         padding-right: 15px;
         outline: none;
-        border-bottom: 2px solid transparent;
+        color: $inputText;
+        border-bottom: 1px solid transparent;
         &:focus{
-            border-bottom: 2px solid $brown;
+            border-bottom: 1px solid $brown;
+        }
+        @media (max-width: $tablet) {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }

@@ -1,0 +1,9 @@
+include ../textarea/textarea.pug
+
+mixin descr(data)
+    section.descr
+        .descr__container.container
+            h2.descr__title.title=data.title
+            p.descr__text.text=data.text
+            +textarea(data.textarea, 'descr__textarea')
+

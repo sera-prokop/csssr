@@ -1,0 +1,22 @@
+.textarea{
+  textarea{
+    background: url('%=static=%assets/textarea/line.png');
+    background-position: 0 83px;
+    resize: none;
+    width: 100%;
+    font-family: $courier;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    line-height: 60px;
+    outline: none;
+    color: $inputText;
+    @media (max-width: $tablet) {
+      font-size: 20px;
+      line-height: 32px;
+      background: url('%=static=%assets/textarea/line_m.png');
+      background-position: 0 15px;
+    }
+  }
+}

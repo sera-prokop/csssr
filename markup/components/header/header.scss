@@ -2,15 +2,24 @@
     display: flex;
     justify-content: space-between;
     padding: 65px 55px 0 112px;
+    @media (max-width: $tablet) {
+        padding: 40px 20px 0;
+    }
 }
 
 .header__logo{
     @include bg($logo);
+    @media (max-width: $tablet) {
+        margin: 0 auto 30px;
+    }
 }
 
 .header__img{
     @include bg($stamp);
     margin-top: -14px;
+    @media (max-width: $tablet) {
+        display: none;
+    }
 }
 
 
