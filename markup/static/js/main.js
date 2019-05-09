@@ -5,9 +5,11 @@
  */
 
 import textArea from 'components/textarea/textarea';
+import level from 'components/level/level';
 
 window.addEventListener('load', () => {
     // slider();
     textArea();
+    level();
 });
 

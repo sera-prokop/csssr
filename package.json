@@ -7,7 +7,8 @@
   "dependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "autosize": "^4.0.2"
+    "autosize": "^4.0.2",
+    "nouislider": "^13.1.5"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
