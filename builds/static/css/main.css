@@ -808,6 +808,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.date {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .date {
+    padding-bottom: 2.5rem;
+  }
+}
+
 .checkbox {
   list-style-type: none;
   padding: 0;
@@ -894,16 +904,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .checkbox__label a:hover, .checkbox__label a:focus {
   color: rgba(31, 95, 151, 0.8);
-}
-
-.date {
-  padding-bottom: 5rem;
-}
-
-@media (max-width: 768px) {
-  .date {
-    padding-bottom: 2.5rem;
-  }
 }
 
 .descr {
@@ -994,7 +994,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-weight: 400;
   background-color: transparent;
   border: none;
-  line-height: 3.125rem;
+  height: 3.3125rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   outline: none;
@@ -1011,7 +1011,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     padding-left: 0;
     padding-right: 0;
     font-size: 1.25rem;
-    line-height: 1.875rem;
+    height: 2rem;
   }
 }
 
@@ -1349,30 +1349,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: rgba(31, 95, 151, 0.8);
 }
 
-.textarea textarea {
-  background: url("../img/assets/textarea/line.png");
-  background-position: 0 5.1875rem;
-  resize: none;
-  width: 100%;
-  font-family: "Courier New", Helvetica, Arial, sans-serif;
-  font-size: 1.875rem;
-  font-weight: 400;
-  background-color: transparent;
-  border: none;
-  line-height: 3.75rem;
-  outline: none;
-  color: #231f20;
-}
-
-@media (max-width: 768px) {
-  .textarea textarea {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    background: url("../img/assets/textarea/line_m.png");
-    background-position: 0 0.9375rem;
-  }
-}
-
 .skills {
   margin-bottom: 3.125rem;
 }
@@ -1407,6 +1383,30 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .skills__list {
     -webkit-columns: 1;
             columns: 1;
+  }
+}
+
+.textarea textarea {
+  background: url("../img/assets/textarea/line.png");
+  background-position: 0 5.1875rem;
+  resize: none;
+  width: 100%;
+  font-family: "Courier New", Helvetica, Arial, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  line-height: 3.75rem;
+  outline: none;
+  color: #231f20;
+}
+
+@media (max-width: 768px) {
+  .textarea textarea {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    background: url("../img/assets/textarea/line_m.png");
+    background-position: 0 0.9375rem;
   }
 }
 
